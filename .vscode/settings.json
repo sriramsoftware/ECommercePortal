@@ -7,5 +7,16 @@
 "other": true,
 "comments": true,
 "strings": true
+},
+"files.exclude" :{
+  "**/.git": true,
+  "**/.svn": true,
+  "**/.hg": true,
+  "**/CVS": true,
+  "**/.DS_Store": true,
+  "node_modules" : true,
+  "e2e": true,
+  "**/assets": true,
+  "**/environments": true
 }
 }
