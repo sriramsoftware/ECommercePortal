@@ -6,6 +6,8 @@ import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 import { ErrorComponent } from "./error/error.component";
 import { LoginComponent } from "./login/login.component";
 
+export const routeComponents = [HomeComponent,LoginComponent,PagenotfoundComponent,ErrorComponent];
+
 const routes: Routes = [
   {path: 'login', component : LoginComponent},
   {path: 'home', component : HomeComponent},

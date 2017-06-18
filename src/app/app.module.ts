@@ -1,22 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from "./app-routing.module";
+
+import { SharedModule } from "./shared/shared.module";
+import { CoreModule } from "./core/core.module";
+import { AppRoutingModule , routeComponents } from "./app-routing.module";
+
 import { AppComponent } from './app.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { ErrorComponent } from './error/error.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagenotfoundComponent,
-    ErrorComponent,
-    HomeComponent,
-    LoginComponent
+   routeComponents
   ],
   imports: [
-    BrowserModule, AppRoutingModule
+    BrowserModule, AppRoutingModule, CoreModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
