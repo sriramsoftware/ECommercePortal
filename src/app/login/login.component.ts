@@ -8,12 +8,16 @@ import { LoginService } from "./login.service";
 })
 export class LoginComponent implements OnInit {
   loggedIn: boolean = false;
+  username: string; 
+  password: string;
   constructor(private loginService: LoginService) {
 
   }
 
-  OnAuthenticateClicked(username: string, password: string): void {
-    this.loginService.authenticate(username, password).subscribe(response => this.loggedIn = response);
+  OnAuthenticateClicked(): void {
+    this.loginService.authenticate(this.username, this.password).subscribe(response => {
+    this.loggedIn = response;
+  });
   }
 
   ngOnInit() {

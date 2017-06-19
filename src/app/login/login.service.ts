@@ -16,9 +16,10 @@ export class LoginService {
     }
 
     authenticate(username : string, password: string): Observable<boolean> {
-        return this._http.get(this.apiUrl).map((response: Response) => <boolean>response.json())
-        .do(data => console.log(data))
-        .catch(this.handleError);
+        return new Observable<true>();
+        // return this._http.get(this.apiUrl).map((response: Response) => <boolean>response.json())
+        // .do(data => console.log(data))
+        // .catch(this.handleError);
     }
 
     private handleError(error : Response){
