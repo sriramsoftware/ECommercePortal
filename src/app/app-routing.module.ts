@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule,Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 import { ErrorComponent } from "./error/error.component";
-import { LoginComponent } from "./login/login.component";
+import { LoginComponent } from "./user/login.component";
 
 export const routeComponents = [HomeComponent,LoginComponent,PagenotfoundComponent,ErrorComponent];
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],

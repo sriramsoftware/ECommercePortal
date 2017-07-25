@@ -16,7 +16,6 @@
   "**/.DS_Store": true,
   "node_modules" : true,
   "e2e": true,
-  "**/assets": true,
-  "**/environments": true
+  "**/assets": true
 }
 }

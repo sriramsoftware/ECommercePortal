@@ -1,0 +1,8 @@
+<p>
+  login works!
+  <input type="text" [(ngModel)]="user.email"/>
+  <input type="password" [(ngModel)]="user.passkey"/>
+  <label>Remember Me! <input type="checkbox" [(ngModel)]="user.rememberMe"/></label>
+  <button class="btn btn-default" (click)="OnAuthenticateClicked()">Submit
+  </button>
+</p>
